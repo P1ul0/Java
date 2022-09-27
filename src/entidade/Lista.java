@@ -44,9 +44,14 @@ public class Lista {
       ant = p;
       p = p.getProximo();
       if(p == novoValor){
-        ant.setProximo(this.inicio.getProximo())
-      }else{
-      }
+        if (p == inicio){
+          this.inicio = this.inicio.getProximo();
+        }else if (p == ultimo){
+          this.ultimo = ant;
+          ant.setProximo(null);
+        }else{
+          ant.setProximo(this.inicio.getProximo());
+        }
        break;
     }
   }
