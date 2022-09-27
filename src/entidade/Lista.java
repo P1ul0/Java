@@ -37,7 +37,7 @@ public class Lista {
       }
     }
     
-    public void remover(int novoValor){
+  public void remover(int novoValor){
       ant = null;
       p = this.inicio;
       while(p != null){
