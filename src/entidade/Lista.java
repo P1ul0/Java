@@ -33,7 +33,7 @@ public class Lista {
         this.ultimo = novoNo
       }else{
         this.ultimo.setProximo(novoNo);
-        this.ultimo = novoNo
+        this.ultimo = novoNo;
       }
     }
 }
