@@ -24,4 +24,15 @@ public class Lista {
     public void setUltimo(No ultimo) {
         this.ultimo = ultimo;
     }
+    
+    public void adicionar(int valor){
+      No novoNo = new No(valor);
+      if (this.inicio == null) {
+        this.inicio = novoNo;
+        this.ultimo = novoNo
+      }else{
+        this.ultimo.setProximo(novoNo);
+        this.ultimo = novoNo
+      }
+    }
 }
