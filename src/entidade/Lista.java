@@ -24,7 +24,7 @@ public class Lista {
         this.ultimo = ultimo;
     }
     
-    public void adicionar(int novoValor){
+  public void adicionar(int novoValor){
       No novoNo = new No(novoValor);
       No p = this.inicio;
     
@@ -34,6 +34,20 @@ public class Lista {
       }else{
         this.ultimo.setProximo(novoNo);
         this.ultimo = novoNo;
+      }
+    }
+    
+    public void remover(int novoValor){
+      ant = null;
+      p = this.inicio;
+      while(p != null){
+        if(p != novoValor){
+          ant = p;
+          p = p.getProximo();
+        }else{
+          ant.setProximo(this.inicio.getProximo())
+        }
+        break;
       }
     }
 }
