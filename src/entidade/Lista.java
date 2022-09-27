@@ -38,16 +38,16 @@ public class Lista {
     }
     
   public void remover(int novoValor){
-      ant = null;
-      p = this.inicio;
-      while(p != null){
-        if(p != novoValor){
-          ant = p;
-          p = p.getProximo();
-        }else{
-          ant.setProximo(this.inicio.getProximo())
-        }
-        break;
+    ant = null;
+    p = this.inicio;
+    while(p != null){
+      ant = p;
+      p = p.getProximo();
+      if(p == novoValor){
+        ant.setProximo(this.inicio.getProximo())
+      }else{
       }
+       break;
     }
+  }
 }
