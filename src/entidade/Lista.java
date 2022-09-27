@@ -1,5 +1,4 @@
 package entidade;
-import No
 public class Lista {
     private No inicio;
     private No ultimo;
