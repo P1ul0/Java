@@ -27,6 +27,8 @@ public class Lista {
     
     public void adicionar(int valor){
       No novoNo = new No(valor);
+      No p = this.inicio;
+      
       if (this.inicio == null) {
         this.inicio = novoNo;
         this.ultimo = novoNo
