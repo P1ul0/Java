@@ -34,8 +34,6 @@ public class Lista {
       }else{
         this.ultimo.setProximo(novoNo);
         this.ultimo = novoNo
-        System.out.printf(this.inicio.getInicio);
-        System.out.printf(this.ultimo.getUltimo);
       }
     }
 }
