@@ -10,7 +10,6 @@ public class Main {
         lista.adicionar(1);
         lista.adicionar(3);
         lista.adicionar(6);
-        lista.adicionar(8);
         lista.verificar(4);
         lista.removerPar();
         lista.imprimirLista();

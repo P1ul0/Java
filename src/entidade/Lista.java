@@ -101,6 +101,8 @@ public class Lista {
                  if (p.equals(this.ultimo)){
                      this.ultimo = ant;
                      ant.setProximo(null);
+                 }else if (p.equals(this.inicio)){
+                     this.inicio = p.getProximo();
                  }else {
                      ant.setProximo(p.getProximo());
                  }
